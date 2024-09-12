@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deskripsi halaman Anda di sini" />
+    <title>Kalkulator</title>
+    <!-- Link ke CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+    <div class="pembukaan">
+      <h1>Welcome to Katik</h1>
+      <p>
+        Hai Sobat, Selamat datang di Katik <br>
+        Sebuah web apps sederhana yang
+        berfungsi untuk menghitung nilai luas dan keliling bangun datar Segitiga
+      </p>
+    </div>
+      <nav class="nav">
+        <div class="nav">
+        <button href="#luas" class="buttonnav" onclick="showSection('luas')">Luas</button>
+        <button href="#keliling" onclick="showSection('keliling')" class="buttonnav">Keliling</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="luas" class="content-section">
+            <h2>Hitung Luas Segitiga</h2>
+            <div class="sesiluas">
+            <label for="base">Panjang Alas (b):</label>
+            <input type="number" id="base-luas" placeholder="Masukkan panjang alas" required>
+    
+            <label for="height">Tinggi (h):</label>
+            <input type="number" id="height-luas" placeholder="Masukkan tinggi" required>
+            </div>
+
+            <button onclick="hitungLuasSegitiga()">Hitung Luas</button>
+    
+            <div class="result" id="result-luas"></div>
+          </section>
+    
+          <section id="keliling" class="content-section hidden">
+            <h2>Hitung Keliling Segitiga</h2>
+            <div class="sesikeliling">
+            <label for="side-a">Sisi A:</label>
+            <input type="number" id="s1" placeholder="Masukkan sisi A" required>
+    
+            <label for="side-b">Sisi B:</label>
+            <input type="number" id="s2" placeholder="Masukkan sisi B" required>
+    
+            <label for="side-c">Sisi C:</label>
+            <input type="number" id="s3" placeholder="Masukkan sisi C" required>
+            </div>
+            <button onclick="hitungKelilingSegitiga()">Hitung Keliling</button>
+    
+            <div class="result" id="result-keliling"></div>
+          </section>
+    </main>
+
+    <!-- Link ke JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+
+
+.pembukaan{
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.buttonnav{
+    background-color: aqua;
+    
+}
+
+.sesikeliling,.sesiluas{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header nav ul li a.active {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
